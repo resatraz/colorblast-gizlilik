@@ -1,1 +1,0 @@
-# colorblast-gizlilik
