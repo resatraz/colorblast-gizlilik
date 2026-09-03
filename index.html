@@ -1,43 +1,162 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <title>ColorBlast Gizlilik Politikası</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ColorBlast Gizlilik Politikası</title>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(180deg, #9fd8ec 0%, #bfe8f2 100%);
+    min-height: 100vh;
+    color: #ffffff;
+  }
+
+  .container {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 36px 20px 64px;
+  }
+
+  .header {
+    text-align: center;
+    margin-bottom: 28px;
+  }
+
+  h1 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    margin: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  .updated {
+    text-align: center;
+    color: #1a2744;
+    font-size: 13px;
+    margin-top: 10px;
+    opacity: 0.8;
+    font-weight: 600;
+  }
+
+  .card {
+    background: #17233f;
+    border: 1px solid #2a3a63;
+    border-radius: 16px;
+    padding: 18px 20px;
+    margin-bottom: 14px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+  }
+
+  h2 {
+    color: #ffb703;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+  }
+
+  p, li {
+    color: #e8edf6;
+    font-size: 14.5px;
+    line-height: 1.6;
+    margin: 0 0 6px;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  .contact-btn {
+    display: block;
+    width: fit-content;
+    margin: 30px auto 0;
+    background: linear-gradient(180deg, #ffd76a 0%, #ffb703 100%);
+    color: #1a2744;
+    font-weight: 800;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 12px 40px;
+    border-radius: 999px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    border: 2px solid #e69500;
+  }
+
+  .contact-btn:hover {
+    filter: brightness(1.05);
+  }
+</style>
 </head>
 <body>
-  <h1>ColorBlast Gizlilik Politikası</h1>
-  <p>Son Güncelleme: 1 Eylül 2026</p>
 
-  <h2>1. Genel Bilgi</h2>
-  <p>ColorBlast, kullanıcıların gizliliğini korumayı taahhüt eder.</p>
+  <div class="topbar"></div>
 
-  <h2>2. Toplanan Veriler</h2>
-  <ul>
-    <li>Oyun skorları ve istatistikleri</li>
-    <li>Liderlik tablosu verileri</li>
-    <li>Tercih edilen dil ayarları</li>
-  </ul>
+  <div class="container">
+    <div class="header">
+      <h1>ColorBlast</h1>
+      <div class="updated">GİZLİLİK POLİTİKASI · Son Güncelleme: 1 Eylül 2026</div>
+    </div>
 
-  <h2>3. Firebase Kullanımı</h2>
-  <p>Liderboard verileri Firebase Cloud Firestore'da saklanır. Üçüncü taraflarla paylaşılmaz.</p>
+    <div class="card">
+      <h2>Genel Bilgi</h2>
+      <p>ColorBlast, kullanıcıların gizliliğini korumayı taahhüt eder.</p>
+    </div>
 
-  <h2>4. Üçüncü Taraf Hizmetler</h2>
-  <p>Firebase Cloud Firestore (veri saklama), Google AdMob (reklam).</p>
+    <div class="card">
+      <h2>Toplanan Veriler</h2>
+      <ul>
+        <li>Oyun skorları ve istatistikleri</li>
+        <li>Liderlik tablosu verileri</li>
+        <li>Tercih edilen dil ayarları</li>
+      </ul>
+    </div>
 
-  <h2>5. Çocukların Gizliliği</h2>
-  <p>13 yaş altı kullanıcılardan bilerek kişisel veri toplanmaz.</p>
+    <div class="card">
+      <h2>Firebase Kullanımı</h2>
+      <p>Liderboard verileri Firebase Cloud Firestore'da saklanır. Üçüncü taraflarla paylaşılmaz.</p>
+    </div>
 
-  <h2>6. Kullanıcı Hakları</h2>
-  <ul>
-    <li>Verilerine erişim talep etme</li>
-    <li>Verilerinin silinmesini talep etme</li>
-  </ul>
+    <div class="card">
+      <h2>Üçüncü Taraf Hizmetler</h2>
+      <p>Firebase Cloud Firestore (veri saklama), Google AdMob (reklam).</p>
+    </div>
 
-  <h2>7. İletişim</h2>
-  <p>Geliştirici: Mehmet Reşat Raz</p>
-  <p>resatraz@gmail.com</p>
+    <div class="card">
+      <h2>Çocukların Gizliliği</h2>
+      <p>13 yaş altı kullanıcılardan bilerek kişisel veri toplanmaz.</p>
+    </div>
 
-  <h2>8. Politika Değişiklikleri</h2>
-  <p>Değişiklikler uygulama içinde duyurulur.</p>
+    <div class="card">
+      <h2>Kullanıcı Hakları</h2>
+      <ul>
+        <li>Verilerine erişim talep etme</li>
+        <li>Verilerinin silinmesini talep etme</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>İletişim</h2>
+      <p>Geliştirici: Mehmet Reşat Raz</p>
+      <p>resatraz@gmail.com</p>
+    </div>
+
+    <div class="card">
+      <h2>Politika Değişiklikleri</h2>
+      <p>Değişiklikler uygulama içinde duyurulur.</p>
+    </div>
+
+    <a href="mailto:resatraz@gmail.com" class="contact-btn">İLETİŞİME GEÇ</a>
+  </div>
+
 </body>
 </html>
