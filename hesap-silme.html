@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ColorBlast - Hesap ve Veri Silme</title>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(180deg, #9fd8ec 0%, #bfe8f2 100%);
+    min-height: 100vh;
+    color: #ffffff;
+  }
+
+  .container {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 36px 20px 64px;
+  }
+
+  .header {
+    text-align: center;
+    margin-bottom: 28px;
+  }
+
+  h1 {
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    margin: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  .updated {
+    text-align: center;
+    color: #1a2744;
+    font-size: 13px;
+    margin-top: 10px;
+    opacity: 0.8;
+    font-weight: 600;
+  }
+
+  .card {
+    background: #17233f;
+    border: 1px solid #2a3a63;
+    border-radius: 16px;
+    padding: 18px 20px;
+    margin-bottom: 14px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+  }
+
+  h2 {
+    color: #ffb703;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+  }
+
+  p, li {
+    color: #e8edf6;
+    font-size: 14.5px;
+    line-height: 1.6;
+    margin: 0 0 6px;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  .contact-btn {
+    display: block;
+    width: fit-content;
+    margin: 30px auto 0;
+    background: linear-gradient(180deg, #ffd76a 0%, #ffb703 100%);
+    color: #1a2744;
+    font-weight: 800;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 12px 40px;
+    border-radius: 999px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    border: 2px solid #e69500;
+  }
+
+  .contact-btn:hover {
+    filter: brightness(1.05);
+  }
+</style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">
+      <h1>ColorBlast</h1>
+      <div class="updated">HESAP VE VERİ SİLME TALEBİ</div>
+    </div>
+
+    <div class="card">
+      <h2>Nasıl Talep Ederim?</h2>
+      <p>Hesabınıza ait verilerin (oyuncu adı, oyun skorları) silinmesini talep etmek için aşağıdaki e-posta adresine, kayıtlı olduğunuz oyuncu adını belirterek bir e-posta gönderin.</p>
+    </div>
+
+    <div class="card">
+      <h2>Silinen Veriler</h2>
+      <ul>
+        <li>Oyuncu adı / takma ad</li>
+        <li>Liderlik tablosu skorları</li>
+        <li>Uygulamayla ilişkili anonim kullanıcı kimliği (uid)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>İşlem Süresi</h2>
+      <p>Talebiniz, e-postanın alınmasından itibaren en geç 30 gün içinde işleme alınır ve veriler Firebase Cloud Firestore veritabanından kalıcı olarak silinir.</p>
+    </div>
+
+    <div class="card">
+      <h2>İletişim</h2>
+      <p>Geliştirici: Mehmet Reşat Raz</p>
+      <p>resatraz@gmail.com</p>
+    </div>
+
+    <a href="mailto:resatraz@gmail.com?subject=ColorBlast%20Veri%20Silme%20Talebi" class="contact-btn">VERİ SİLME TALEP ET</a>
+  </div>
+
+</body>
+</html>
